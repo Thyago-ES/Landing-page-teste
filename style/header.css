@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+.header-page{
+    width: 100%;
+    height: 72px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-bottom: 2px solid #111111;
+}
+
+.header-content{
+    width: calc(100% - 240px);
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logo{
+    font-size: 2rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: 800;
+}
+
+.header-nav{
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+}
+.header-nav .header-nav-item{
+    display: flex;
+    align-items: center;
+
+    height: 100%;
+
+    font-weight: 600;
+    font-size: 1rem;
+}
+.header-nav .header-nav-item:last-child{
+    margin-left: 10px;
+}
+.header-nav .header-nav-item:not(:last-child, :first-child){
+    margin-left: 30px;
+}
+
+.header-nav .header-nav-item .link-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    height: 100%;
+}
+
+.header-nav .header-nav-item .botao-nav{
+    cursor: pointer;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.header-nav .header-nav-item:hover .link-nav,
+.header-nav .header-nav-item:hover .botao-nav{
+    text-decoration: underline;
+}
+
+.header-nav .header-nav-item .botao-registrar{
+    color: #ffffff;
+    background-color: #111111;
+}
+
+.services{
+    flex-direction: column;
+    position: relative;
+}
+.services-menu{
+    height: 0;
+    width: 150px;
+
+    overflow: hidden;
+
+    position: absolute;
+    top: 70px;
+
+    transition: height 0.5s;
+}
+
+.services-menu-nav{
+    height: 100%;
+    width: 100%;
+}
+
+.services-menu-nav li{
+    font-weight: 600;
+    font-size: 1rem;
+
+    width: 100%;
+    height: 40px;
+
+    display: grid;
+    place-items: center;
+}
+
+.services-menu-nav li:not(:last-child){
+    border-bottom: 1px solid #111111;
+}
+
+.header-nav .services:hover .services-menu{
+    display: block;
+    height: 160px;
+    border: 1px solid #111111;
+}
