@@ -1,0 +1,63 @@
+/* Hero */
+.main-page{
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero{
+    width: 80%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    padding: 4.5rem 0;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+
+    width: 40%;
+}
+
+.hero-content h1{
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-wrap: wrap;
+    line-height: 60px;
+}
+
+.hero-content p{
+    font-size: 1.1rem;
+    text-wrap: wrap;
+}
+
+.hero-content .flex-row{
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hero-content button{
+    width: 13rem;
+    height: 3rem;
+}
+
+.hero-content span{
+    width: 200px;
+}
+
+.hero-image{
+    width: 40%;
+}
+
+.hero-image img{
+    height: 100%;
+}
