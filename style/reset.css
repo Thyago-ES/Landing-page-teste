@@ -8,10 +8,6 @@
     color: #111111;
 }
 
-html{
-    font-size: 16px;
-}
-
 ul{
     list-style: none;
 }
@@ -27,4 +23,13 @@ button{
     background-color: transparent;
     font-weight: 600;
     font-size: 1rem;
+    cursor: pointer;
+}
+
+button:hover{
+    text-decoration: underline;
+}
+
+img{
+    width: 100%;
 }

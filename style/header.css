@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-
 .header-page{
     width: 100%;
     height: 72px;
@@ -12,7 +10,7 @@
 }
 
 .header-content{
-    width: calc(100% - 240px);
+    width: 80%;
     height: 100%;
 
     display: flex;
@@ -58,17 +56,15 @@
 }
 
 .header-nav .header-nav-item .botao-nav{
-    cursor: pointer;
     padding: 0 20px;
     height: 50px;
 }
 
-.header-nav .header-nav-item:hover .link-nav,
-.header-nav .header-nav-item:hover .botao-nav{
+.header-nav .header-nav-item:hover .link-nav{
     text-decoration: underline;
 }
 
-.header-nav .header-nav-item .botao-registrar{
+.black-button{
     color: #ffffff;
     background-color: #111111;
 }
@@ -77,6 +73,11 @@
     flex-direction: column;
     position: relative;
 }
+
+.services img{
+    width: 10px;
+}
+
 .services-menu{
     height: 0;
     width: 150px;
@@ -85,6 +86,8 @@
 
     position: absolute;
     top: 70px;
+
+    background-color: #ffffff;
 
     transition: height 0.5s;
 }
